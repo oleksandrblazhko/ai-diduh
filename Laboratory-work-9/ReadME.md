@@ -30,3 +30,18 @@
 
 ### Створення child-процесу
 
+2.2.1. Створення C-програми, яка породжує процес та замінює образ процесу на команду ls -l -a :
+
+![2 2 1](https://github.com/user-attachments/assets/bc343274-8b55-4bee-a532-26de43b76b88)
+
+![2 2 1b](https://github.com/user-attachments/assets/55c24aec-8ac0-479a-89ce-136d6fefeec3)
+
+2.2.2. Компіляція та перевірка програми:
+
+![2 2 2](https://github.com/user-attachments/assets/a52bbb9e-a75e-43be-82f2-dd0d55a7a135)
+
+### Обмін сигналами між процесами
+
+
+
+
