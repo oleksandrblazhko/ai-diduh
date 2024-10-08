@@ -59,14 +59,48 @@
 ![2 3 4](https://github.com/user-attachments/assets/68815810-406a-47ee-8e0e-ec3cca985946)
 
 ### 2.4. Створення процесу-сироти
+2.4.1. Створення C-програми з назвою «didukh_orphan»:
 
+![2 4 1](https://github.com/user-attachments/assets/84affa5e-1398-4a1d-8dee-8bea9cd191ca)
 
+2.4.2. Компіляція програми: 
+
+![2 4 2a](https://github.com/user-attachments/assets/81635a82-70ea-4cd9-a58a-6909b178d79a)
+
+![2 4 2](https://github.com/user-attachments/assets/b5d2192c-cb91-4013-bef8-10fb141c74a7)
 
 ### 2.5. Створення zombie-процесу
 
+2.5.1.  Створення C-програми з назвою «didukh_zombie.c»:
+
+![2 5 1](https://github.com/user-attachments/assets/7e932877-733c-4e12-88f3-8fd28225bd0b)
+
+2.5.2. Компіляція та запуск:
+
+![2 5 2](https://github.com/user-attachments/assets/1e7abefc-5801-42d3-84b7-3c670a4a4011)
+
+![2 5 3](https://github.com/user-attachments/assets/351ed899-2354-4801-9021-5f87ff133e4c)
 
 
 ### 2.6. Попередження створення zombie-процесу
+
+2.6.1. Створення C-програми з назвою «didukh_zombie_stop.c»:
+
+![2 6 1](https://github.com/user-attachments/assets/df5fc375-15a1-48f8-be55-7df0ee01d2c0)
+
+2.6.2. Компіляція та запуск:
+
+![2 6 2](https://github.com/user-attachments/assets/322e173c-9ef4-4c1e-853d-6c2f2bed1561)
+
+![2 6 3](https://github.com/user-attachments/assets/2273a7d2-65e3-4e52-a905-109de2da114d)
+
+![2 6 3a](https://github.com/user-attachments/assets/14b1ca45-6d6c-462d-8a1d-cb008f485b27)
+
+
+____________________________________________
+
+
+
 
 
 
