@@ -94,5 +94,40 @@ char* wait_graph[][2] = {
 Для протоколу 2-го ступеня блокування стану Deadlock - немає.</br></br>
 </br></br></br></br>
 
+### 2.2 Налаштування бази даних
+</br></br>
+![2 2 1](https://github.com/user-attachments/assets/67f17ff4-a2e5-4009-9ca7-f5fb731dbc7e)
+</br></br>
+![2 2 2](https://github.com/user-attachments/assets/a95e0c51-95ad-43eb-9808-2bc255d9f8f3)
+</br></br>
+![2 2 3](https://github.com/user-attachments/assets/603a3766-61eb-438c-be44-4089b772a7c9)
 
+</br></br>
 
+2.2.3 -2.2.6 Створення SQL запита:
+
+```
+-- 2.2.3: Створення таблиці person
+CREATE TABLE person (
+    p_id INTEGER,
+    name CHAR(20),
+    bd DATE
+);
+
+-- 2.2.4: Додавання рядка
+INSERT INTO person VALUES
+(1, 'Jobs', '2000-04-01');
+
+-- 2.2.5: Додавання рядка з транслітерацією мого прізвища Didukh
+INSERT INTO person VALUES
+(2, 'Didukh', '2024-10-27');
+
+-- 2.2.6: Перегляд змісту таблиці person
+SELECT * FROM person;
+```
+![2 2 4-6](https://github.com/user-attachments/assets/f1bced40-fd30-4131-98d8-c0cd3b8746c1)
+
+</br></br></br></br>
+
+### 2.3 Керування квазіпаралельним виконанням транзакцій з використанням команд блокування
+</br></br>
