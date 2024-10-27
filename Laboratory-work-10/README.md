@@ -187,3 +187,18 @@ COMMIT;
 
 ### 2.4 Керування квазіпаралельним виконанням транзакцій при наявності Deadlock-станів.
 </br></br>
+2.4.1 Створення файлу
+</br>
+![2 4 1](https://github.com/user-attachments/assets/c33eb004-b7f7-46ad-b147-547f31e77c01)
+</br></br>
+2.4.2 Виконати модифіковані транзакції
+</br></br>
+![2 4 2](https://github.com/user-attachments/assets/6441d8e3-835f-4a77-9dfc-4409dd41ffae)
+
+</br></br></br></br>
+
+
+
+
+
+
