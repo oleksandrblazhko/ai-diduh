@@ -131,3 +131,59 @@ SELECT * FROM person;
 
 ### 2.3 Керування квазіпаралельним виконанням транзакцій з використанням команд блокування
 </br></br>
+2.3.1 Створення SQL-файлу для транзакцій з 1-м ступенем блокування:
+</br></br>
+![2 3 1](https://github.com/user-attachments/assets/4e45eead-f073-4f92-92b8-8b66e0f80d6b)
+</br></br>
+```
+BEGIN;
+
+-- Операція блокування
+LOCK TABLE person IN EXCLUSIVE MODE;
+
+-- Операція читання
+SELECT * FROM person WHERE p_id = 1;
+
+-- Операція зміни значення
+UPDATE person SET name = 'Steve' WHERE p_id = 1;
+
+-- Повторна операція читання
+SELECT * FROM person WHERE p_id = 1;
+
+-- Операція фіксації
+COMMIT;
+
+-- Транзакція №2
+BEGIN;
+
+-- Операція блокування
+LOCK TABLE person IN EXCLUSIVE MODE;
+
+-- Операція читання
+SELECT * FROM person WHERE p_id = 1;
+
+-- Операція зміни значення
+UPDATE person SET name = 'Bill' WHERE p_id = 1;
+
+-- Повторна операція читання
+SELECT * FROM person WHERE p_id = 1;
+
+-- Операція фіксації
+COMMIT;
+```
+</br></br>
+2.3.3 - 2.3.6 Виконання транзакцій у псевдотерміналах:
+
+![2 3 3](https://github.com/user-attachments/assets/b7de50a1-8476-4f82-81bd-9c722248c0ac)
+</br></br>
+![2 3 4a](https://github.com/user-attachments/assets/6c295a16-036e-414b-a0d2-14b683754c86)
+</br></br>
+![2 3 4](https://github.com/user-attachments/assets/497affe4-d706-4ab1-9119-28e35746abf9)
+</br></br>
+![2 3 5a](https://github.com/user-attachments/assets/328b41a4-a695-49d0-8ffa-ac04a31c0028)
+</br></br>
+![2 3 6](https://github.com/user-attachments/assets/798d4e45-aa8a-4932-bcaf-4ebc52871741)
+</br></br></br></br>
+
+### 2.4 Керування квазіпаралельним виконанням транзакцій при наявності Deadlock-станів.
+</br></br>
